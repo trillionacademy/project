@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use Auth;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class RegistrationfeeController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,11 +23,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        var_dump(Auth::user()->membership);
+        var_dump('registrationfee');
         exit();
-        if(Auth::user()->membership == 0)
-            return redirect('/fee');
-        else
-            return view('home');
+        return view('registrationfee');
     }
 }

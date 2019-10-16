@@ -30,6 +30,7 @@ class CreateUsersTable extends Migration
             $table->string('company');
             $table->string('churchname');
             $table->string('churchaddress');
+            $table->integer('membership')->default('0');
             $table->rememberToken();
             $table->timestamps();
         });

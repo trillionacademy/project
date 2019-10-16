@@ -16,12 +16,13 @@ Route::get('/', function () {
 });
 // Route::get('captcha-form', 'CaptchaController@captchForm');
 // Route::post('store-captcha-form', 'CaptchaController@storeCaptchaForm');
-Auth::routes([
-    'register' => false,
-    'verify' => true,
-    'reset' => false
-  ]);
-Route::post('/register', 'RegisterController@create');
+// Auth::routes([
+//     'register' => false,
+//     'verify' => true,
+//     'reset' => false
+//   ]);
+// Route::post('/register', 'RegisterController@create');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/fee', 'RegistrationfeeController@index')->name('home');

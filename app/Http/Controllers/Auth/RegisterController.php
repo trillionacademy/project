@@ -53,16 +53,16 @@ class RegisterController extends Controller
             'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            // 'mobilenumber' => ['required', 'int', 'max:255'],
-            // 'country' => ['required', 'string', 'max:255'],
-            // 'city' => ['required', 'string', 'max:255'],
-            // 'state' => ['required', 'string', 'max:255'],
-            // 'zipcode' => ['required', 'string'],
-            // 'occupation' => ['required', 'string', 'max:255'],
-            // 'income' => ['required', 'int', 'max:255'],
-            // 'company' => ['required', 'string', 'max:255'],
-            // 'churchname' => ['required', 'string', 'max:255'],
-            // 'churchaddress' => ['required', 'string', 'max:255'],
+            'mobilenumber' => ['required', 'int'],
+            'country' => ['required', 'string', 'max:255'],
+            'city' => ['required', 'string', 'max:255'],
+            'state' => ['required', 'string', 'max:255'],
+            'zipcode' => ['required', 'string'],
+            'occupation' => ['required', 'string', 'max:255'],
+            'income' => ['required', 'string', 'max:255'],
+            'company' => ['required', 'string', 'max:255'],
+            'churchname' => ['required', 'string', 'max:255'],
+            'churchaddress' => ['required', 'string', 'max:255'],
         ]);
     }
 
@@ -79,16 +79,16 @@ class RegisterController extends Controller
             'lastname' => $data['lastname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            // 'mobilenumber' => $data['mobilenumber'],
-            // 'country' => $data['country'],
-            // 'city' => $data['city'],
-            // 'state' => $data['state'],
-            // 'zipcode' => $data['zipcode'],
-            // 'occupation' => $data['occupation'],
-            // 'income' => $data['income'],
-            // 'company' => $data['company'],
-            // 'churchname' => $data['churchname'],
-            // 'churchaddress' => $data['churchaddress'],
+            'mobilenumber' => $data['mobilenumber'],
+            'country' => $data['country'],
+            'city' => $data['city'],
+            'state' => $data['state'],
+            'zipcode' => $data['zipcode'],
+            'occupation' => $data['occupation'],
+            'income' => $data['income'],
+            'company' => $data['company'],
+            'churchname' => $data['churchname'],
+            'churchaddress' => $data['churchaddress'],
         ]);
     }
     public function rules()
@@ -96,5 +96,10 @@ class RegisterController extends Controller
         return [
             'g-recaptcha-response'=>'required|recaptcha'
         ];
+    }
+
+    public function store(ReCaptchataTestFormRequest $request){
+        //TODO: the rest of the code when form is successful
+        return "Done right! :-) ";
     }
 }
