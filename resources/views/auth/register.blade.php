@@ -11,7 +11,7 @@
                         @csrf
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="firstname" type="text" class="form-control @error('firstname') is-invalid @enderror" placeholder="Firstname" name="firstname" value="Ibrahim" required autocomplete="firstname" autofocus>
                                 
                                 @error('firstname')
@@ -20,7 +20,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="lastname" type="text" class="form-control @error('lastname') is-invalid @enderror" placeholder="Lastname" name="lastname" value="Harab" required autocomplete="lastname" autofocus>
 
                                 @error('lastname')
@@ -32,7 +32,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="aaa@aaa.com" required autocomplete="email">
 
                                 @error('email')
@@ -41,7 +41,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Password" name="password" required autocomplete="new-password">
 
                                 @error('password')
@@ -53,10 +53,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Confirm Password" required autocomplete="new-password">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="mobilenumber" type="number" class="form-control @error('Mobile Number') is-invalid @enderror" placeholder="Mobile Number" name="mobilenumber" value="1234567890" required autocomplete="mobilenumber" autofocus>
 
                                 @error('mobilenumber')
@@ -68,7 +68,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                             <select id="country" class="form-control @error('country') is-invalid @enderror" placeholder="Country" name="country" value="Ghana" required autocomplete="country" autofocus>
                                 <option value="AFG">Afghanistan</option>
                                 <option value="ALA">Åland Islands</option>
@@ -329,7 +329,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" placeholder="City" name="city" value="{{ old('city') }}" required autocomplete="city" autofocus>
 
                                 @error('city')
@@ -341,7 +341,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="zipcode" type="text" class="form-control @error('zipcode') is-invalid @enderror" placeholder="Zipcode" name="zipcode" onchange="zipcodeChanged()" value="23321" required autocomplete="zipcode" autofocus>
                                 <div id="text-error"></div>
                                 @error('zipcode')
@@ -350,7 +350,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="state" type="text" class="form-control @error('State') is-invalid @enderror" placeholder="State" name="state" value="{{ old('state') }}" required autocomplete="state" autofocus>
 
                                 @error('state')
@@ -362,7 +362,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="occupation" type="text" class="form-control @error('occupation') is-invalid @enderror" placeholder="Occupation" name="occupation" value="CEO" required autocomplete="occupation" autofocus>
 
                                 @error('occupation')
@@ -371,7 +371,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <select id="income" class="form-control @error('income') is-invalid @enderror" placeholder="Income" name="income" value="2" required autocomplete="income" autofocus>
                                     <option value="1">$1000 ~ $10,000</option>
                                     <option value="2">$10,000 - $50,000</option>
@@ -388,7 +388,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="company" type="text" class="form-control @error('company') is-invalid @enderror" placeholder="Company" name="company" value="AB company" required autocomplete="company" autofocus>
 
                                 @error('company')
@@ -397,7 +397,7 @@
                                     </span>
                                 @enderror
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="churchname" type="text" class="form-control @error('churchname') is-invalid @enderror" placeholder="Church Name" name="churchname" value="churchname" required autocomplete="churchname" autofocus>
 
                                 @error('churchname')
@@ -408,12 +408,12 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <div class="g-recaptcha" 
                                     data-sitekey="{{env('GOOGLE_RECAPTCHA_KEY')}}">
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-sm-12">
                                 <input id="churchaddress" type="text" class="form-control @error('churchaddress') is-invalid @enderror" placeholder="Church Address" name="churchaddress" value="churchaddress" required autocomplete="churchaddress" autofocus>
 
                                 @error('churchaddress')
@@ -438,15 +438,12 @@
                                     </a>
                                 @endif
                             </div>
-                            <div class="col-md-6">
-                                
-                            </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-md-8 offset-md-2">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="agree" id="agree" onclick="myFunction()">
+                                    <input class="form-check-input" type="checkbox" name="agree" id="agree" onclick="agree()">
 
                                     <label class="form-check-label" for="agree">
                                         {{ __('I AGREE THE ') }}                                        
@@ -489,7 +486,7 @@
     </div>
 </div>
 <script>
-    function myFunction() {
+    function agree() {
         var checkBox = document.getElementById("agree");
         var btn = document.getElementById("register");
         if (checkBox.checked == true){

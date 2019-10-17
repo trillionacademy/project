@@ -23,8 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        var_dump(Auth::user()->membership);
-        exit();
         if(Auth::user()->membership == 0)
             return redirect('/fee');
         else

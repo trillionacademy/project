@@ -23,8 +23,17 @@ class RegistrationfeeController extends Controller
      */
     public function index()
     {
-        var_dump('registrationfee');
-        exit();
         return view('registrationfee');
+    }
+    public function makepayment(Request $request)
+    {        
+        $userInfo = Auth::user();
+        $userInfo->membership = $request->membership;
+        $userInfo->save();
+        return view('home');
+    }
+    public function skippayment()
+    {
+        return view('home');
     }
 }

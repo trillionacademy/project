@@ -3,8 +3,8 @@
 }
 
 .nav-img{
-  width:50px;
-  width:50px;
+  height:40px;
+  width:40px;
   margin-left: 40px;
 }
 .bg-black{
@@ -33,6 +33,7 @@
 }
 .bottom-img{
   width:200px;
+  height: 110px;
 }
 /* .py-4 {
   padding-top: 5.5rem!important;
@@ -66,3 +67,124 @@
   padding: 0rem 0rem;
   margin-bottom: 2px;
 }
+.reg-div{
+  background-color: #F4CF00;
+  height: 100%;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+.reg-pdiv{
+  display: inherit;
+}
+.membership-title{
+  text-align: center;
+  padding-right: 50px;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.membership-checkboxicon{
+  zoom: 1.5;
+}
+.memebership-content{
+  font-size: 13px;
+  padding-left: 25px;
+}
+.membership-reg{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 30px;
+}
+.membership-price{
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 30px;
+  font-family: initial;
+}
+.vspace{
+  padding-top: 40px;
+}
+.card-body {
+  padding: 1.00rem;
+  padding-bottom: 0px;
+}
+.membership-padding{
+  margin-bottom: 10px;
+}
+.membership-skip{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: right;
+  color: #F4CF00;
+  padding-left: 60px;
+}
+.membership-or{
+  font-size: 25px;
+  font-weight: bold;
+  float: right;
+  padding-right: 40px;
+}
+.form-group {
+  margin-bottom: 0px;
+}
+.membership-makepay{
+  color: #F4CF00;
+  background-color: black;
+  border-color: black;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+.nav-username{
+  color: white!important;
+}
+.das-img{
+  height:40px;
+  width:40px;
+}
+.navbar-padding{
+  border-bottom: solid #F4CF00 2px;
+  padding: 0.45rem 1rem;
+}
+.div-logo{
+  padding: 0.4rem 0.2rem;
+  display: inherit;  
+  border-bottom: solid #F4CF00 2px;  
+}
+.logo-title{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+  color: #F4CF00;
+}
+.main{
+  padding: 0px;
+}
+html, 
+body {
+    height: 100%;
+}
+.fullheight {
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+#app{
+  height: 100%;
+}
+.div-side{
+  background-color: #201D1D;
+  border-right: solid #F4CF00 2px;  
+  /* padding:0px; */
+  /* min-width:190px;
+  width:190px; */
+}
+
+/* @media (min-width: 992px){
+  .div-side{
+    min-width:190px;
+    width:190px;
+  }
+} */

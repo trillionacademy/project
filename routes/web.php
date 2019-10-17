@@ -25,4 +25,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/fee', 'RegistrationfeeController@index')->name('home');
+Route::get('/fee', 'RegistrationfeeController@index')->name('fee');
+Route::post('/makepayment', 'RegistrationfeeController@makepayment')->name('makepayment');
+Route::get('/skippayment', 'RegistrationfeeController@skippayment')->name('skippayment');
